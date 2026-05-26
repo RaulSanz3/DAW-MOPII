@@ -37,8 +37,12 @@ INSERT INTO productos (nombre, tipo, marca, descripcion, precio, stock, imagen) 
 ('Desbrozadora EGO ST1531-L', 'desbrozadora', 'EGO', 'Desbrozadora inalámbrica profesional', 429.00, 6, 'desbrozadora_ego_st1531-l.jpg'),
 ('Sopladora Stihl BGA 57', 'sopladora', 'Stihl', 'Sopladora ligera a batería para limpieza de bosques y zonas recreativas', 149.00, 17, 'sopladora_stihl_bga57.jpg'),
 ('Taladro DeWalt DCD796D2-GB', 'taladro', 'DeWalt', 'Taladro sin cable profesional 18 V', 219.00, 11, 'taladro_dewalt_dcd796d2gb.jpg'),
-('Hacha Husqvarna X-Cut X162', 'hacha', 'Husqvarna', 'Hacha profesional de talá-intermedia', 69.00, 28, 'hacha_husqvarna_xcut_x162.jpg'),
+('Hacha Husqvarna X-Cut X162', 'hacha', 'Husqvarna', 'Hacha profesional de talá-intermedia', 69.00, 28, 'hacha_husqvarna_xcut_x162.jpg'),
 ('Maza Stanley FatMax FME-MFM18XB-1', 'maza', 'Stanley', 'Maza profesional para uso forestal con mango de fibra', 79.90, 20, 'maza_stanley_fatmax_fmemfm18xb1.jpg'),
 ('Casco Forestal Husqvarna Technical XR', 'accesorio', 'Husqvarna', 'Casco técnico con protección para tala intensiva', 99.90, 15, 'casco_husqvarna_technical_xr.jpg'),
-('Kit Limpieza Motosierra Stihl Premium', 'accesorio', 'Stihl', 'Kit de limpieza y mantenimiento para motosierra', 39.00, 30, 'kit_limpieza_motosierra_stihl_premium.jpg');
-
+('Kit Limpieza Motosierra Stihl Premium', 'accesorio', 'Stihl', 'Kit de limpieza y mantenimiento para motosierra', 39.00, 30, 'kit_limpieza_motosierra_stihl_premium.jpg'),
+('iPhone 15 Pro', 'electronica', 'Apple', 'Smartphone de última generación con chip A17 Pro', 1199.99, 5, 'iphone15pro.jpg'),
+('PlayStation 5', 'electronica', 'Sony', 'Consola de videojuegos de nueva generación', 549.99, 3, 'ps5.jpg'),
+('Zapatillas Air Max 90', 'ropa', 'Nike', 'Zapatillas deportivas clásicas muy cómodas', 129.99, 20, 'airmax90.jpg'),
+('Cafetera Nespresso Vertuo', 'hogar', 'Nespresso', 'Cafetera de cápsulas para café de alta calidad', 89.99, 15, 'nespresso_vertuo.jpg'),
+('Libro El Quijote', 'libro', 'Cervantes', 'La obra más importante de la literatura española', 12.99, 50, 'quijote.jpg');
