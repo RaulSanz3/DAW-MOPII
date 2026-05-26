@@ -13,9 +13,9 @@
       <input
         type="text"
         v-model="terminoBusqueda"
-        placeholder="Buscar productos..."
+        placeholder="¿Qué producto estás buscando?"
       />
-      <button @click="buscar">Buscar</button>
+      <button @click="accionEncontrar">Buscar</button>
     </div>
 
     <!-- ===============================
@@ -24,7 +24,7 @@
     <div class="filtros">
         <input v-model="filtroMarca" placeholder="Marca">
         <input v-model="filtroTipo" placeholder="Tipo">
-        <button @click="buscar">Aplicar filtros</button>
+        <button @click="accionEncontrar">Aplicar filtros</button>
     </div>
 
     <!-- ===============================
@@ -48,7 +48,7 @@
 
         <h3>{{ producto.nombre }}</h3>
         <p>{{ producto.descripcion }}</p>
-        <strong>{{ producto.precio }} €</strong>
+        <strong>{{ producto.precio }} euros</strong>
       </div>
     </div>
 
@@ -61,7 +61,7 @@
         @click="paginaAnterior"
         :disabled="paginaActual === 1"
       >
-        Anterior
+        ← Anterior
       </button>
 
       <span>
@@ -72,7 +72,7 @@
         @click="paginaSiguiente"
         :disabled="paginaActual === totalPaginas"
       >
-        Siguiente
+        Siguiente →
       </button>
 
     </div>
@@ -125,7 +125,7 @@ const {
 EVENTOS DE LA VIEW
 =================================================
 */
-const buscar = () => {
+const accionEncontrar = () => {
   buscarProductos()
 }
 
@@ -166,14 +166,14 @@ onMounted(() => {
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .card {
-  background: #fff;
+  background: #e8f5e9;
   padding: 1rem;
   border-radius: 8px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  box-shadow: 0 0 8px rgba(0, 128, 0, 0.3);
 }
 
 .card img {
@@ -189,8 +189,22 @@ onMounted(() => {
   gap: 1rem;
 }
 
+.paginacion button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.button.activo {
+  background-color: #1b5e20;
+  color: #ffffff;
+}
+
 .loading {
   font-style: italic;
+  color: #2e7d32;
 }
 </style>
-
